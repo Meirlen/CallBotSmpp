@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    smpp-server:
+        build: .
+        restart: unless-stopped
+        ports:
+            - '2775:2775'
+        volumes:
+            - ./logs:/usr/src/app/logs
