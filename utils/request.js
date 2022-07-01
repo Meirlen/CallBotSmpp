@@ -9,7 +9,7 @@ async function sendData (phone, message) {
 
     try {
         //TODO: move to env
-        let response = await fetch('https://rasa-server-meirlen.cloud.okteto.net/webhooks/rest/webhook', {
+        let response = await fetch('http://138.68.87.41:5006/webhooks/rest/webhook', {
             method: 'POST',
             mode: 'no-cors',
             headers: {
